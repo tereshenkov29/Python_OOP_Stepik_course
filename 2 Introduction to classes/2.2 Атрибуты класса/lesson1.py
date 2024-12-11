@@ -12,6 +12,12 @@ print(getattr(Person, "name"))
 # Выводить значение по умолчанию, если нет такого атрибута в классе
 print(getattr(Person, "x", 100))
 
+# Проверка наличия определенного атрибута в классе
+print('salary' in Person.__dict__) # False
+
+# Проверка наличия определенного атрибута в классе
+print(hasattr(Person, 'name')) # True
+
 # Изменение значения атрибута
 Person.name = "Misha"
 
